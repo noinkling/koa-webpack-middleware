@@ -13,13 +13,13 @@
   "description": "webpack dev&amp;hot middleware for koa2",
   "main": "dist/index.js",
   "files": [
-    "middleware",
+    "src",
     "dist"
   ],
   "scripts": {
     "lint": "standard | snazzy",
     "test": "npm run lint",
-    "build": "npm run lint && babel -d dist/ middleware/"
+    "build": "npm run lint && babel -d dist src"
   },
   "repository": {
     "type": "git",
@@ -33,10 +33,8 @@
   "homepage": "https://github.com/noinkling/koa-webpack-middleware#readme",
   "devDependencies": {
     "babel-cli": "^6.23.0",
-    "babel-core": "^6.23.1",
     "babel-eslint": "^7.1.1",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-stage-0": "^6.22.0",
+    "babel-preset-env": "^1.1.8",
     "snazzy": "^6.0.0",
     "standard": "^8.6.0"
   },
