@@ -11,15 +11,15 @@
     "hmr"
   ],
   "description": "webpack dev&amp;hot middleware for koa2",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "files": [
     "middleware",
-    "lib"
+    "dist"
   ],
   "scripts": {
     "lint": "standard | snazzy",
     "test": "npm run lint",
-    "build": "npm run lint && babel -d lib/ middleware/"
+    "build": "npm run lint && babel -d dist/ middleware/"
   },
   "repository": {
     "type": "git",
