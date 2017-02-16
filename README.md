@@ -1,16 +1,10 @@
 # koa-webpack-middleware
 
-[![npm version](http://img.shields.io/npm/v/koa-webpack-middleware.svg?style=flat-square)](https://npmjs.org/package/koa-webpack-middleware "View this project on npm")
-[![Circle CI](https://circleci.com/gh/leecade/koa-webpack-middleware.svg)](https://circleci.com/gh/leecade/koa-webpack-middleware)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-[webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) for [koa2](https://github.com/koajs/koa/tree/v2.x) with [HMR](http://webpack.github.io/docs/hot-module-replacement-with-webpack.html)(hot module replacement) supports.
+[webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) for [koa2](https://github.com/koajs/koa/tree/v2.x) with [HMR](http://webpack.github.io/docs/hot-module-replacement-with-webpack.html) (hot module replacement) support.
 
-## Install
-
-```sh
-$ npm i koa-webpack-middleware -D
-```
+Please note: this is an unsupported fork made for my personal use only.
 
 ## Depends
 
@@ -92,8 +86,8 @@ app.use(hotMiddleware(compile, {
     },
     ```
 
-3. webpack `loader` configure 
-    
+3. webpack `loader` configure
+
     ```sh
     $ npm i babel-preset-es2015 babel-preset-stage-0 -D
     ```
@@ -143,4 +137,4 @@ app.use(hotMiddleware(compile, {
     ```
 
 That's all, you're all set!
-    
+
