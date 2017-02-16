@@ -1,6 +1,6 @@
 {
   "name": "koa-webpack-middleware",
-  "version": "1.0.4",
+  "version": "0.1.0",
   "keywords": [
     "react",
     "hot",
@@ -19,7 +19,7 @@
   "scripts": {
     "lint": "standard | snazzy",
     "test": "npm run lint",
-    "build": "npm run lint && babel -d dist src"
+    "build": "npm run lint && babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -44,8 +44,7 @@
   "standard": {
     "parser": "babel-eslint",
     "ignore": [
-      "lib/",
-      "example/"
+      "dist/"
     ]
   },
   "dependencies": {
