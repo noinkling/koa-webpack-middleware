@@ -4,7 +4,7 @@
 
 [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) for [koa2](https://github.com/koajs/koa/tree/v2.x) with [HMR](http://webpack.github.io/docs/hot-module-replacement-with-webpack.html) (hot module replacement) support.
 
-Please note: this is an unsupported fork made for my personal use only.
+Please note: this is an unsupported fork intended for my personal use, and is not published on NPM.
 
 ## Depends
 
