@@ -2,21 +2,11 @@
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-[webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) for [koa2](https://github.com/koajs/koa/tree/v2.x) with [HMR](http://webpack.github.io/docs/hot-module-replacement-with-webpack.html) (hot module replacement) support.
+[webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) for [Koa 2](https://github.com/koajs/koa) with [HMR](https://webpack.js.org/concepts/hot-module-replacement/#components/sidebar/sidebar.jsx) (hot module replacement) support.
 
 Please note: this is an unsupported fork intended for my personal use, and is not published on NPM.
 
-## Depends
-
-This middleware designd for koa2 ecosystem, make sure installed the right version:
-
-```sh
-npm i koa@next -S
-```
-
 ## Usage
-
-> See [example/](./example/) for an example of usage.
 
 ```js
 import webpack from 'webpack'
