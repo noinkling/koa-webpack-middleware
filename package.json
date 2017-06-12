@@ -34,7 +34,7 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
-    "babel-preset-env": "^1.4.0",
+    "babel-preset-env": "^1.5.2",
     "snazzy": "^7.0.0",
     "standard": "^10.0.2"
   },
@@ -48,7 +48,7 @@
     ]
   },
   "dependencies": {
-    "webpack-dev-middleware": "~1.10.2",
+    "webpack-dev-middleware": "github:webpack/webpack-dev-middleware#26f0b4028b15cb0e12916e1e34eac95a97ed7b8b",
     "webpack-hot-middleware": "~2.18.0"
   }
 }
