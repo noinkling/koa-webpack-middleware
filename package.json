@@ -48,7 +48,7 @@
     ]
   },
   "dependencies": {
-    "webpack-dev-middleware": "github:webpack/webpack-dev-middleware#26f0b4028b15cb0e12916e1e34eac95a97ed7b8b",
+    "webpack-dev-middleware": "~1.11.0",
     "webpack-hot-middleware": "~2.18.0"
   }
 }
