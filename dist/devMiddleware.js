@@ -12,7 +12,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = (compiler, opts) => {
   const expressMiddleware = (0, _webpackDevMiddleware2.default)(compiler, opts);
-  return async (ctx, next) => {
+
+  async function middleware(ctx, next) {
     await expressMiddleware(ctx.req, {
       end: content => {
         ctx.body = content;
@@ -21,5 +22,13 @@ exports.default = (compiler, opts) => {
         ctx.set(name, value);
       }
     }, next);
-  };
+  }
+
+  middleware.getFilenameFromUrl = expressMiddleware.getFilenameFromUrl;
+  middleware.waitUntilValid = expressMiddleware.waitUntilValid;
+  middleware.invalidate = expressMiddleware.invalidate;
+  middleware.close = expressMiddleware.close;
+  middleware.fileSystem = expressMiddleware.fileSystem;
+
+  return middleware;
 };
